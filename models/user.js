@@ -8,7 +8,13 @@ const userSchema = new Schema({
 
 	username: { type: String, unique: true, required: false },
 	password: { type: String, unique: false, required: false },
-	mail:    { type: String, unique: true, required: false }
+	mail:    { type: String, unique: true, required: false },
+	roles: [
+		{
+		  type: mongoose.Schema.Types.ObjectId,
+		  ref: "Role"
+		}
+	  ]
 
 })
 

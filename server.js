@@ -14,6 +14,10 @@ const apiPort = 3333
 //const cookie_secret = '3j3k9kj23kjio8d'
 const MongoStore = require('connect-mongo')
 const dbConnection = require('./db')
+require('./routes/auth')(app);
+require('./routes/user')(app);
+
+
 //sessions
 //app.set('trust proxy', 1) // trust first proxy
 
@@ -113,6 +117,5 @@ socket.on('disconnect', (param) => {
 //    });
 
   })
-}
-
-)
+})
+///////////////////////////////fin web sockets/////////////////////////////////////////////

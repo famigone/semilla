@@ -10,13 +10,13 @@ const icons = {
 // ==============================|| MENU ITEMS - SAMPLE PAGE & DOCUMENTATION ||============================== //
 
 const support = {
-    id: 'support',
-    title: 'Support',
+    id: 'administracion',
+    title: 'ADMINISTRACIÓN',
     type: 'group',
     children: [
         {
-            id: 'sample-page',
-            title: 'Sample Page',
+            id: 'usuarios',
+            title: 'USUARIOS',
             type: 'item',
             url: '/sample-page',
             icon: icons.ChromeOutlined
