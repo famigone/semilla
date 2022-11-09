@@ -164,8 +164,6 @@ const AuthLogin = () => {
                                     </Button>
                                 </AnimateButton>
                             </Grid>
-                            
-                            
                         </Grid>
                     </form>
                 )}
